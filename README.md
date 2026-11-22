@@ -31,9 +31,3 @@ Card Summaries: Edit the text inside each tier card directly in index.html.
 Modal Details (leadersData): Inside the <script> tag in index.html, update the leadersData object (title, roleEn, roleKm, dutyKm, and dutyEn) to reflect role updates or add new leaders.
 
 Logo Image: Place bank.jpg in the same folder as index.html to display the header emblem; if missing, a fallback bank icon renders automatically.
-
-
-#### How to Implement:
-1. Open your project folder in your code editor or on GitHub.
-2. Create a new file named `README.md` in the root directory.
-3. Paste the Markdown block above, save the file, and commit it to your repository. If yo

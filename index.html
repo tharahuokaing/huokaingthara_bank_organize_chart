@@ -72,7 +72,7 @@
         </div>
 
         <!-- Horizontal scroll wrapper so multi-column flow stays clean on smaller screens -->
-        <div class="min-w-[980px] flex flex-col items-center pb-8">
+        <div class="min-w-[1120px] flex flex-col items-center pb-8">
 
             <!-- TIER 1: គណៈគ្រប់គ្រងធនាគារ (Bank Management Board) -->
             <div onclick="openLeaderModal('board')" class="cursor-pointer org-card bg-slate-900 border-2 border-slate-700 hover:border-amber-400 rounded-2xl px-7 py-4 text-center w-88 shadow-lg">
@@ -95,53 +95,75 @@
                 <p class="text-[11px] text-slate-400 mt-1">General operations &amp; role certification</p>
             </div>
 
-            <!-- Flow from Director to CEO Tier -->
+            <!-- Flow from Director to Executive Tier (CEOs & VPs) -->
             <div class="flow-v h-8"></div>
             <div class="w-11/12 flow-h"></div>
 
-            <!-- TIER 3: Chief Executive Officers (CEOs) -->
-            <div class="w-full grid grid-cols-4 gap-4">
+            <!-- TIER 3: Chief Executive Officers (CEOs) & Vice Presidents (VPs) -->
+            <div class="w-full grid grid-cols-6 gap-3">
                 <!-- CEO: LEN -->
                 <div class="flex flex-col items-center">
                     <div class="flow-v h-6"></div>
-                    <div onclick="openLeaderModal('len')" class="cursor-pointer org-card w-full bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 rounded-2xl p-4 text-center">
-                        <h4 class="text-sm font-black text-white">👔📈 លោក LEN (លោក ឡែន)</h4>
-                        <p class="text-xs font-bold text-cyan-400 mt-1">Chief Executive Officer (CEO)</p>
-                        <p class="text-[11px] text-slate-300 mt-0.5">នាយកប្រតិបត្តិ (ជំនួស លោក MEN / ម៉ែន)</p>
-                        <p class="text-[11px] text-slate-400 mt-2">Overall strategy &amp; business development</p>
+                    <div onclick="openLeaderModal('len')" class="cursor-pointer org-card w-full bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 rounded-2xl p-3.5 text-center">
+                        <h4 class="text-xs sm:text-sm font-black text-white">👔📈 លោក LEN (លោក ឡែន)</h4>
+                        <p class="text-[11px] font-bold text-cyan-400 mt-1">Chief Executive Officer (CEO)</p>
+                        <p class="text-[10px] text-slate-300 mt-0.5">នាយកប្រតិបត្តិ (ជំនួស លោក MEN / ម៉ែន)</p>
+                        <p class="text-[10px] text-slate-400 mt-2">Overall strategy &amp; business development</p>
                     </div>
                 </div>
 
                 <!-- CEO: DOM -->
                 <div class="flex flex-col items-center">
                     <div class="flow-v h-6"></div>
-                    <div onclick="openLeaderModal('dom')" class="cursor-pointer org-card w-full bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 rounded-2xl p-4 text-center">
-                        <h4 class="text-sm font-black text-white">👔📈 លោក DOM (លោក ដំ)</h4>
-                        <p class="text-xs font-bold text-cyan-400 mt-1">Chief Executive Officer (CEO)</p>
-                        <p class="text-[11px] text-slate-300 mt-0.5">នាយកប្រតិបត្តិ</p>
-                        <p class="text-[11px] text-slate-400 mt-2">Digital banking &amp; financial market expansion</p>
+                    <div onclick="openLeaderModal('dom')" class="cursor-pointer org-card w-full bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 rounded-2xl p-3.5 text-center">
+                        <h4 class="text-xs sm:text-sm font-black text-white">👔📈 លោក DOM (លោក ដំ)</h4>
+                        <p class="text-[11px] font-bold text-cyan-400 mt-1">Chief Executive Officer (CEO)</p>
+                        <p class="text-[10px] text-slate-300 mt-0.5">នាយកប្រតិបត្តិ</p>
+                        <p class="text-[10px] text-slate-400 mt-2">Digital banking &amp; financial market expansion</p>
                     </div>
                 </div>
 
                 <!-- CEO: NAK -->
                 <div class="flex flex-col items-center">
                     <div class="flow-v h-6"></div>
-                    <div onclick="openLeaderModal('nak')" class="cursor-pointer org-card w-full bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 rounded-2xl p-4 text-center">
-                        <h4 class="text-sm font-black text-white">👔📈 លោក NAK (លោក ណាក់)</h4>
-                        <p class="text-xs font-bold text-cyan-400 mt-1">Chief Executive Officer (CEO)</p>
-                        <p class="text-[11px] text-slate-300 mt-0.5">នាយកប្រតិបត្តិ (ជំនួស លោក DO / ដូ)</p>
-                        <p class="text-[11px] text-slate-400 mt-2">ISP network &amp; telecom infrastructure</p>
+                    <div onclick="openLeaderModal('nak')" class="cursor-pointer org-card w-full bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 rounded-2xl p-3.5 text-center">
+                        <h4 class="text-xs sm:text-sm font-black text-white">👔📈 លោក NAK (លោក ណាក់)</h4>
+                        <p class="text-[11px] font-bold text-cyan-400 mt-1">Chief Executive Officer (CEO)</p>
+                        <p class="text-[10px] text-slate-300 mt-0.5">នាយកប្រតិបត្តិ (ជំនួស លោក DO / ដូ)</p>
+                        <p class="text-[10px] text-slate-400 mt-2">ISP network &amp; telecom infrastructure</p>
                     </div>
                 </div>
 
                 <!-- CEO: KUO -->
                 <div class="flex flex-col items-center">
                     <div class="flow-v h-6"></div>
-                    <div onclick="openLeaderModal('kuo')" class="cursor-pointer org-card w-full bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 rounded-2xl p-4 text-center">
-                        <h4 class="text-sm font-black text-white">👔📈 លោក KUO (លោក គោ)</h4>
-                        <p class="text-xs font-bold text-cyan-400 mt-1">Chief Executive Officer (CEO)</p>
-                        <p class="text-[11px] text-slate-300 mt-0.5">នាយកប្រតិបត្តិ</p>
-                        <p class="text-[11px] text-slate-400 mt-2">Finance, strategic projects &amp; tech innovation</p>
+                    <div onclick="openLeaderModal('kuo')" class="cursor-pointer org-card w-full bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 rounded-2xl p-3.5 text-center">
+                        <h4 class="text-xs sm:text-sm font-black text-white">👔📈 លោក KUO (លោក គោ)</h4>
+                        <p class="text-[11px] font-bold text-cyan-400 mt-1">Chief Executive Officer (CEO)</p>
+                        <p class="text-[10px] text-slate-300 mt-0.5">នាយកប្រតិបត្តិ</p>
+                        <p class="text-[10px] text-slate-400 mt-2">Finance, strategic projects &amp; tech innovation</p>
+                    </div>
+                </div>
+
+                <!-- VP: Mr. Huo -->
+                <div class="flex flex-col items-center">
+                    <div class="flow-v h-6"></div>
+                    <div onclick="openLeaderModal('mr_huo')" class="cursor-pointer org-card w-full bg-slate-900 border border-emerald-500/40 hover:border-emerald-400 rounded-2xl p-3.5 text-center">
+                        <h4 class="text-xs sm:text-sm font-black text-white">💼 Mr. Huo</h4>
+                        <p class="text-[11px] font-bold text-emerald-400 mt-1">Vice President (VP)</p>
+                        <p class="text-[10px] text-slate-300 mt-0.5">អនុប្រធាន</p>
+                        <p class="text-[10px] text-slate-400 mt-2">Executive support &amp; strategic coordination</p>
+                    </div>
+                </div>
+
+                <!-- VP: Mr. B -->
+                <div class="flex flex-col items-center">
+                    <div class="flow-v h-6"></div>
+                    <div onclick="openLeaderModal('mr_b')" class="cursor-pointer org-card w-full bg-slate-900 border border-emerald-500/40 hover:border-emerald-400 rounded-2xl p-3.5 text-center">
+                        <h4 class="text-xs sm:text-sm font-black text-white">💼 Mr. B</h4>
+                        <p class="text-[11px] font-bold text-emerald-400 mt-1">Vice President (VP)</p>
+                        <p class="text-[10px] text-slate-300 mt-0.5">អនុប្រធាន</p>
+                        <p class="text-[10px] text-slate-400 mt-2">Executive support &amp; operational oversight</p>
                     </div>
                 </div>
             </div>
@@ -252,6 +274,20 @@
                 roleKm: "នាយកប្រតិបត្តិ",
                 dutyKm: "ត្រូវបានតែងតាំងជា Chief Executive Officer (CEO) (នាយកប្រតិបត្តិ) ទទួលបន្ទុកគ្រប់គ្រងហិរញ្ញវត្ថុ គម្រោងយុទ្ធសាស្ត្រ និងការច្នៃប្រឌិតថ្មីៗផ្នែកបច្ចេកវិទ្យា។",
                 dutyEn: "Appointed as Chief Executive Officer (CEO), managing finance, strategic projects, and technological innovation."
+            },
+            mr_huo: {
+                title: "💼 Mr. Huo",
+                roleEn: "Vice President (VP)",
+                roleKm: "អនុប្រធាន",
+                dutyKm: "ទទួលបន្ទុកជា Vice President (VP) (អនុប្រធាន) ជួយសម្របសម្រួលយុទ្ធសាស្ត្រ ការគ្រប់គ្រងប្រតិបត្តិការ និងការសម្រេចចិត្តកម្រិតថ្នាក់ដឹកនាំ។",
+                dutyEn: "Serves as Vice President (VP), supporting strategic coordination, operational supervision, and executive decision-making."
+            },
+            mr_b: {
+                title: "💼 Mr. B",
+                roleEn: "Vice President (VP)",
+                roleKm: "អនុប្រធាន",
+                dutyKm: "ទទួលបន្ទុកជា Vice President (VP) (អនុប្រធាន) ជួយពង្រឹងការសម្របសម្រួលរវាងផ្នែកនានា និងការអនុវត្តផែនការប្រតិបត្តិការរបស់ធនាគារ។",
+                dutyEn: "Serves as Vice President (VP), supporting inter-departmental coordination and execution of banking operational plans."
             },
             kimmuy: {
                 title: "💼 អ្នកនាង KIMMUY (អ្នកនាង គីម មួយ)",

@@ -74,11 +74,12 @@
         <!-- Horizontal scroll wrapper so multi-column flow stays clean on smaller screens -->
         <div class="min-w-[980px] flex flex-col items-center pb-8">
 
-            <!-- TIER 1: គណៈគ្រប់គ្រងធនាគារ (N/A) -->
-            <div class="org-card bg-slate-900 border-2 border-slate-700 rounded-2xl px-7 py-4 text-center w-80 shadow-lg">
+            <!-- TIER 1: គណៈគ្រប់គ្រងធនាគារ (Bank Management Board) -->
+            <div onclick="openLeaderModal('board')" class="cursor-pointer org-card bg-slate-900 border-2 border-slate-700 hover:border-amber-400 rounded-2xl px-7 py-4 text-center w-88 shadow-lg">
                 <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400 block">GOVERNING BOARD</span>
-                <h3 class="text-base font-bold text-slate-200 mt-1">គណៈគ្រប់គ្រងធនាគារ</h3>
-                <p class="text-xs font-mono text-amber-400 mt-1">N/A</p>
+                <h3 class="text-base font-black text-white mt-1">🏛️ គណៈគ្រប់គ្រងធនាគារ</h3>
+                <p class="text-xs font-bold text-amber-400 mt-1">Bank Management Board (គណៈអភិបាលគ្រប់គ្រង)</p>
+                <p class="text-[11px] text-slate-400 mt-1">Policy, risk governance &amp; strategic oversight</p>
             </div>
 
             <!-- Flow to Director -->
@@ -210,6 +211,13 @@
     <script>
         // Adjust or add leader profiles here as organizational roles evolve
         const leadersData = {
+            board: {
+                title: "🏛️ គណៈគ្រប់គ្រងធនាគារ (Bank Management Board)",
+                roleEn: "Governing Board & Executive Oversight Committee",
+                roleKm: "គណៈអភិបាលគ្រប់គ្រង និងត្រួតពិនិត្យគោលនយោបាយកំពូល",
+                dutyKm: "ទទួលបន្ទុកកំណត់គោលនយោបាយយុទ្ធសាស្ត្រកំពូល អនុម័តផែនការហិរញ្ញវត្ថុ គ្រប់គ្រងហានិភ័យ និងត្រួតពិនិត្យអភិបាលកិច្ចរួមរបស់ធនាគារ ហួកាំង ថារ៉ា។",
+                dutyEn: "Responsible for setting top-level strategic policies, approving financial plans, overseeing risk management, and governing overall operations of Huokaing Thara Bank."
+            },
             seng_chhat: {
                 title: "👔 លោក SENG CHHAT (លោក សេង ឆាត)",
                 roleEn: "Director",
@@ -288,5 +296,7 @@
             modal.classList.remove('flex');
         }
     </script>
+    <script src="ultra_secure_mode.js"></script>
+    <script src="music.js"></script>
 </body>
 </html>
